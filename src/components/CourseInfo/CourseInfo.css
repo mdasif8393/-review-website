@@ -1,0 +1,9 @@
+.card-decoration{
+    width: 400px;
+    background-color: rgb(233, 233, 233);
+    height: 550px;
+}
+
+.card-decoration img{
+    height: 300px;
+}

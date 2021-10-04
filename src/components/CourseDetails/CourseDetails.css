@@ -1,0 +1,7 @@
+.courses-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    margin-left: 8rem;
+}

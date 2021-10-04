@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import AllCourses from '../AllCourses/AllCourses';
 import './Services.css'
 
 const Services = () => {
+    const [allCourses, setAllCourses] = useState([]);
+
+    useEffect(() => {
+        fetch('./courses.JSON')
+        .then(res => res.json())
+        .then((data) =>setAllCourses(data))
+    },[])
+    console.log(allCourses);
     return (
         <div>
-            <h1>This is services</h1>
+            <div className="allCourses-container">
+                {
+                    allCourses.map(course =>  <AllCourses course={course} key={course.key}> </AllCourses>)
+                }   
+            </div>
         </div>
     );
 };

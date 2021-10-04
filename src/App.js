@@ -11,6 +11,8 @@ import Services from "./components/Services/Services";
 import Header from "./components/Header/Header";
 import NotFound from "./components/NotFound/NotFound";
 import Footer from "./components/Footer/Footer";
+import CourseDetails from "./components/CourseDetails/CourseDetails";
+import Course from "./components/Course/Course";
 
 
 
@@ -42,6 +44,14 @@ function App() {
 
       <Route path ="/about">
         <About></About>
+      </Route>
+
+      <Route path ="/details">
+        <CourseDetails></CourseDetails>
+      </Route>
+
+      <Route path ="/course/:key">
+        <Course></Course>
       </Route>
 
       <Route path ="*">

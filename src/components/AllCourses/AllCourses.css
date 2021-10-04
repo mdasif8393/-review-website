@@ -1,0 +1,17 @@
+.allCourses-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+.all-course-decoration{
+    background-color: rgb(233, 233, 233);
+    margin: 3rem;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px lightgrey;
+}
+.all-course-decoration img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 1rem;
+}
